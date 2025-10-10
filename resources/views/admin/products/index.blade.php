@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 @empty
-                    <p>
+                    <p class="text-center">
                         Belum ada produk ditambahkan oleh pemilik Apotik.
                     </p>
                 @endforelse

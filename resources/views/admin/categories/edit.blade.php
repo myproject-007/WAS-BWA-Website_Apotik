@@ -39,7 +39,7 @@
 
                     <div class="flex items-center justify-end mt-4">
                         <x-primary-button class="ms-4">
-                            {{ __('Update Caterory') }}
+                            {{ __('Update Category') }}
                         </x-primary-button>
                     </div>
                 </form>

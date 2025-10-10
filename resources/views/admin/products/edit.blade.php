@@ -28,14 +28,14 @@
                     </div>
 
                     <div class="mt-4">
-                        <x-input-label for="price" :value="__('price')" />
+                        <x-input-label for="price" :value="__('Price')" />
                         <x-text-input id="price" class="block mt-1 w-full" type="number" name="price"
                             value="{{ $product->price }}" required autofocus autocomplete="price" />
                         <x-input-error :messages="$errors->get('price')" class="mt-2" />
                     </div>
 
                     <div class="mt-4">
-                        <x-input-label for="category" :value="__('category')" />
+                        <x-input-label for="category" :value="__('Category')" />
                         <select name="category_id" id="category_id"
                             class="py-3 rounded-lg pl-3 w-full border border-slate-300">
                             <option value="{{ $product->category->id }}">{{ $product->category->name }}</option>
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="mt-4">
-                        <x-input-label for="about" :value="__('about')" />
+                        <x-input-label for="about" :value="__('About')" />
                         <textarea name="about" id="about" cols="30" rows="5"
                             class="border border-e-slate-300 rounded-xl w-full">{{ $product->about }}</textarea>
                         <x-input-error :messages="$errors->get('about')" class="mt-2" />
@@ -56,10 +56,10 @@
 
                     <!-- Icon -->
                     <div class="mt-4">
-                        <x-input-label for="photo" :value="__('photo')" />
+                        <x-input-label for="photo" :value="__('Photo')" />
                         <img src="{{ Storage::url($product->photo) }}" alt="" class="w-[50px] h-[50px]">
                         <x-text-input id="photo" class="block mt-1 w-full" type="file" photo="photo"
-                            name="photo" required autofocus autocomplete="photo" />
+                            name="photo" autofocus autocomplete="photo" />
                         <x-input-error :messages="$errors->get('photo')" class="mt-2" />
                     </div>
 

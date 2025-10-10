@@ -30,6 +30,9 @@
                         </div>
                     </div>
                 @empty
+                <p class="text-center">
+                    Belum ada Kategori yang dibuat oleh Pemilik Apotik
+                </p>
                 @endforelse
 
             </div>
